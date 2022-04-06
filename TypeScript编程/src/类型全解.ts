@@ -52,3 +52,20 @@ function buildArray() {
 }
 
 const h = buildArray(); // (string | number)[]
+
+/**
+ * 元组
+ * 长度固定、各索引位上的值具有固定的已知类型
+ */
+const i: [string, string, number?] = ['lin', 'zijun']; // 可选
+const j: [number, boolean, ...string[]] = [1, true, 'x', 'y']; // 剩余元素
+
+/**
+ * 只读数组/元组
+ */
+type A = readonly string[];
+type B = ReadonlyArray<string>;
+type C = Readonly<string[]>;
+
+type D = readonly [number, string];
+type E = Readonly<[number, string]>;
