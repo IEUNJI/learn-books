@@ -69,3 +69,16 @@ type C = Readonly<string[]>;
 
 type D = readonly [number, string];
 type E = Readonly<[number, string]>;
+
+/**
+ * null：缺少值
+ * undefined：尚未赋值的变量
+ * void：没有return语句的函数
+ * never：永不返回的函数
+ */
+
+/**
+ * 枚举
+ * enum：可通过值访问枚举
+ * const enum：只能通过键访问枚举
+ */
