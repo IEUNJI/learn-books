@@ -82,3 +82,14 @@ type E = Readonly<[number, string]>;
  * enum：可通过值访问枚举
  * const enum：只能通过键访问枚举
  */
+
+/**
+ * 练习
+ */
+let k = null; // null是any的子类型
+
+let l: never; // never是所有类型的子类型
+// l = 'l'; // error
+
+let m: unknown; // unknown是所有类型的父类型
+m = 'm';
