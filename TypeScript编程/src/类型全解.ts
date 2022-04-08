@@ -2,7 +2,7 @@
  * 类型字面量（type literal）
  * 使用const声明基本类型的值，TypeScript会推到范围最窄的类型
  */
-const a = true; // type true
+export const a = true; // type true
 const b = 12; // type 12
 const c = 'hello'; // type 'hello'
 const d = Symbol('d'); // typeof d（unique symbol 类型）
